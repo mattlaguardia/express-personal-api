@@ -13,6 +13,20 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // var db = require('./models');
 
+// HARD CODED DATA //
+var profile = [];
+profile.push({
+  _id:1,
+  name: 'Matt',
+  github_link: "https://github.com/mattlaguardia",
+  github_profile_image: "https://github.com/account",
+  current_city: "San Francisco",
+  pets: [{name: "Pepper", type: "Dog", breed: "Dachshund"},{name:
+  "Chip", type: "Dog", breed: "Beagle"}],
+  movies: [{"ADD"}],
+  tv_shows: [{"ADD"}]
+});
+
 /**********
  * ROUTES *
  **********/
