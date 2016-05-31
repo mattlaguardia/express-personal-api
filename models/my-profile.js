@@ -3,8 +3,8 @@ var Schema = mongoose.Schema;
 
 var MyProfileSchema = new Schema ({
   name: String,
-  github_link: Link,
-  github_profile_image: Link,
+  github_link: String,
+  github_profile_image: String,
   current_city: String,
   pets: [String],
   movies: [String],

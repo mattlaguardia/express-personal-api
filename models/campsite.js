@@ -1,10 +1,11 @@
-// var mongoose = require('mongoose'),
-//   Schema = mongoose.Schema;
+var mongoose = require('mongoose'),
+  Schema = mongoose.Schema;
 
-// var CampsiteSchema = new Schema({
-//   description: String
-// });
+var HikingSchema = new Schema({
+  location: String,
+  details: String
+});
 
-// var Campsite = mongoose.model('Campsite', CampsiteSchema);
+var HikingLocations = mongoose.model('Hiking', HikingSchema);
 
-// module.exports = Campsite;
+module.exports = HikingLocations;
